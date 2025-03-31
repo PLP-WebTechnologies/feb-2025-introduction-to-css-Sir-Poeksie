@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Rotunda - Coming Soon</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 id="brand-title">House of Rotunda</h1>
+        <p class="typing-text">Luxury Fashion. Dark Aesthetics. Timeless Style.</p>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contacts">Contact Us</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Ordered List (Roman Numerals Centered) -->
+    <section id="about">
+        <h2>Our Core Values</h2>
+        <ol class="roman-list">
+            <li>Elegance</li>
+            <li>Innovation</li>
+            <li>Craftsmanship</li>
+            <li>Luxury</li>
+            <li>Timeless Style</li>
+        </ol>
+    </section>
+
+    <!-- Video Section -->
+    <section id="gallery">
+        <h2>Our Latest Collection</h2>
+        <video controls>
+            <source src="fashion-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Sort this out to be relative and all in the same row, and all be the same size -->
+        <div class="image-gallery">
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/983657/pexels-photo-983657.jpeg" alt="Collection Item 1">
+                <div class="overlay">Collection Item 1</div>
+            </div>
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/256236/pexels-photo-256236.jpeg" alt="Collection Item 2">
+                <div class="overlay">Collection Item 2</div>
+            </div>
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/380782/pexels-photo-380782.jpeg" alt="Collection Item 3">
+                <div class="overlay">Collection Item 3</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Table of Contacts -->
+    <section id="contacts">
+        <h2>Contact Directory</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Mpumelelo Nxazonke</td>
+                <td>Ekurhuleni, South Africa</td>
+                <td>+27 123 456 7890</td>
+                <td>mtnxazonke@rotunda.com</td>
+            </tr>
+            <tr>
+                <td>Nomthandazo</td>
+                <td>Johannesburg, SA</td>
+                <td>+27 987 654 3210</td>
+                <td>nomtha@rotunda.com</td>
+            </tr>
+            <tr>
+                <td>Letshego</td>
+                <td>Cape Town, SA</td>
+                <td>+27 555 555 5555</td>
+                <td>letshego@rotunda.com</td>
+            </tr>
+            <tr>
+                <td>Jennifer</td>
+                <td>Pretoria, SA</td>
+                <td>+27 666 777 8888</td>
+                <td>jennifer@rotunda.com</td>
+            </tr>
+            <tr>
+                <td>Mmabatho</td>
+                <td>Durban, SA</td>
+                <td>+27 999 888 7777</td>
+                <td>mmabatho@rotunda.com</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register">
+        <h2>Join the House of Rotunda</h2>
+        <form id="registration-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="6" placeholder="Choose a strong password" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female" required> Female
+            <input type="radio" name="gender" value="Other" required> Other
+
+            <label for="fashion">Preferred Style:</label>
+            <select id="fashion" name="fashion">
+                <option value="luxury">Luxury</option>
+                <option value="goth">Neo-Goth</option>
+                <option value="streetwear">Streetwear</option>
+            </select>
+
+            <label>Subscribe to Newsletter:</label>
+            <input type="checkbox" name="newsletter" checked> Yes, keep me updated!
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: <a href="mailto:mtnxazonke@gmail.com">Mpumelelo Nxazonke</a></p>
+    </footer>
+
+</body>
+</html>
